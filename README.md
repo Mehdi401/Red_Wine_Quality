@@ -218,23 +218,7 @@ pip install numpy pandas scikit-learn tensorflow matplotlib seaborn
 - **Caveat**: StandardScaler fit on full data; prefer fitting on training split only.
 - **Outliers**: IQR‑based analysis included; mean‑replacement was **exploratory** and not used in final training.
 
----
 
-## 📈 What to Try Next
 
-- Replace global standardization with a **train‑only** scaler via `Pipeline`.
-- Compare against strong **tabular baselines** (e.g., Logistic Regression, Random Forest, XGBoost/LightGBM).
-- Perform **hyperparameter search** (learning rate, hidden sizes, dropout, class weights).
-- Use **stratified splits** and **cross‑validation** for more robust estimates.
-- Save fitted **encoders/scaler** and model for deployment/reproducibility.
 
----
 
-## 📚 Reference
-
-- Cortez et al., “Modeling wine preferences by data mining from physicochemical properties,” *Decision Support Systems*, 2009.
-- UCI ML Repository — Wine Quality (Red).
-
----
-
-*This README mirrors exactly what the notebook implements so you can drop it straight into your repo.*
